@@ -160,7 +160,8 @@ section[id],div[id]{scroll-margin-top:66px}
 /* NAV */
 nav{background:var(--white);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;padding:0 40px}
 .nav-inner{max-width:1140px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:66px}
-.logo{font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.5px}
+.logo{font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.5px;display:flex;align-items:center;gap:8px}
+.logo-icon{width:28px;height:28px;object-fit:contain;flex-shrink:0}
 .logo span{color:var(--green)}
 .nav-links{display:flex;gap:32px;list-style:none}
 .nav-links a{font-size:14px;font-weight:500;color:var(--muted);transition:color .2s}
@@ -545,7 +546,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.65);padding:60px 40px 30px
 <!-- NAV -->
 <nav role="navigation" aria-label="Main navigation">
   <div class="nav-inner">
-    <div class="logo">Rapid<span>Pay</span>Stub</div>
+    <a href="index.html#hero" style="display:flex;align-items:center;text-decoration:none"><div class="logo"><img src="/android-chrome-192x192.png" alt="RapidPayStub logo" class="logo-icon">Rapid<span>Pay</span>Stub</div></a>
     <ul class="nav-links">
       <li><a href="#how-it-works">How It Works</a></li>
       <li><a href="#features">Features</a></li>
@@ -651,20 +652,20 @@ footer{background:var(--navy);color:rgba(255,255,255,.65);padding:60px 40px 30px
     <div class="steps">
       <div class="step">
         <div class="step-num">1</div>
-        <h3>Send Your Requirements</h3>
-        <p>Send your company name, employee info, pay period, salary or hourly rate, and any deductions.</p>
+        <h3>Enter your details</h3>
+        <p>Fill in your company name, employee info, pay period, salary or hourly rate, and any deductions.</p>
         <div class="step-arrow">→</div>
       </div>
       <div class="step">
         <div class="step-num">2</div>
-        <h3>Preview &amp; Approve Sample</h3>
-        <p>We review your requirements and send a sample for your approval.</p>
+        <h3>Preview &amp; verify</h3>
+        <p>Our system calculates federal and state taxes. Review the preview before downloading.</p>
         <div class="step-arrow">→</div>
       </div>
       <div class="step">
         <div class="step-num">3</div>
-        <h3>Receive Your Final File</h3>
-        <p> Once we complete and deliver your finished file. Get a professionally formatted PDF in seconds. Print it or email it.</p>
+        <h3>Download instantly</h3>
+        <p>Get a professionally formatted PDF in seconds. Print it, email it, or upload it wherever it's needed.</p>
       </div>
     </div>
   </div>
@@ -694,7 +695,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.65);padding:60px 40px 30px
       </div>
       <div class="feature-card">
         <div class="feature-icon">⚡</div>
-        <h3>Quick Delivery</h3>
+        <h3>Instant download</h3>
         <p>No waiting, no email confirmation. Your pay stub is generated and ready to download in under 30 minutes.</p>
       </div>
       <div class="feature-card">
@@ -705,7 +706,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.65);padding:60px 40px 30px
       <div class="feature-card">
         <div class="feature-icon">✏️</div>
         <h3>Custom deductions</h3>
-        <p>Add FLI , SDI and any custom deductions to match your real situation.</p>
+        <p>Add health insurance, 401(k), Tips, and any custom deductions to match your real situation.</p>
       </div>
     </div>
   </div>
@@ -726,9 +727,9 @@ footer{background:var(--navy);color:rgba(255,255,255,.65);padding:60px 40px 30px
           <li><span class="check">✓</span> 1 pay stub</li>
           <li><span class="check">✓</span> 1 Form 1099</li>
           <li><span class="check">✓</span> 1 Form W2</li>
-          <li><span class="check">✓</span> PDF Deliver</li>
+          <li><span class="check">✓</span> PDF download</li>
           <li><span class="check">✓</span> All 50 states</li>
-          <li><span class="check">✓</span> State tax calculation</li>
+          <li><span class="check">✓</span> Auto tax calculation</li>
           <li><span class="check">✓</span> Custom deductions</li>
           <li><span class="check">✓</span> Priority support</li>
         </ul>
@@ -745,7 +746,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.65);padding:60px 40px 30px
           <li><span class="check">✓</span> 3 Form W2</li>
           <li><span class="check">✓</span> PDF + Email delivery</li>
           <li><span class="check">✓</span> All 50 states</li>
-          <li><span class="check">✓</span> State tax calculation</li>
+          <li><span class="check">✓</span> Auto tax calculation</li>
           <li><span class="check">✓</span> Custom deductions</li>
           <li><span class="check">✓</span> Priority support</li>
         </ul>
@@ -761,7 +762,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.65);padding:60px 40px 30px
           <li><span class="check">✓</span> 5 Form W2</li>
           <li><span class="check">✓</span> PDF + Email delivery</li>
           <li><span class="check">✓</span> All 50 states</li>
-          <li><span class="check">✓</span> State tax calculation</li>
+          <li><span class="check">✓</span> Auto tax calculation</li>
           <li><span class="check">✓</span> Custom deductions</li>
           <li><span class="check">✓</span> Dedicated support</li>
         </ul>
@@ -1024,7 +1025,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.65);padding:60px 40px 30px
   <div class="footer-inner">
     <div class="footer-grid">
       <div class="footer-brand">
-        <div class="logo">Rapid<span>RapidPayStub</span>Stub</div>
+        <div class="logo"><img src="/android-chrome-192x192.png" alt="RapidPayStub logo" class="logo-icon">Rapid<span>RapidPayStub</span>Stub</div>
         <p>The fastest way to generate professional, accurate pay stubs online. Trusted by freelancers, contractors, and small businesses across all 50 states.</p>
       </div>
       <div class="footer-col">
